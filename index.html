@@ -25,7 +25,7 @@
         </section>
     </header>
     <main class="w-10/12 mx-auto p-4">
-        <section>
+        <section class="grid lg:grid-cols-4">
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="./images/triangle.png" alt="Shoes" />
                 </figure>
@@ -33,8 +33,10 @@
                     <h2 class="card-title">Triangle</h2>
                     <p>Area(A)=0.5 x b x h</p>
                     <div class="flex gap-3">
-                        <input id="triangle_base" type="text" class="w-1/2 border-2 rounded-md p-1" placeholder="b"> <span>cm</span>
-                        <input id="triangle_height" type="text " class="w-1/2 border-2 rounded-md p-1" placeholder="h"><span>cm</span>
+                        <input id="triangle_base" type="text" class="w-1/2 border-2 rounded-md p-1" placeholder="b">
+                        <span>cm</span>
+                        <input id="triangle_height" type="text " class="w-1/2 border-2 rounded-md p-1"
+                            placeholder="h"><span>cm</span>
                     </div>
                     <div>
                         <p>Area(A)= <span id="triangle_area">0</span><span>cm<sup>2</sup> </span></p>
@@ -44,10 +46,53 @@
                     </div>
                 </div>
             </div>
+            <!-- parallelogram -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/parallelogram.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">parallelogram</h2>
+                    <p>Area(A)= b x h</p>
+                    <div class="flex gap-3">
+                        <input id="parallelogram_base" type="text" class="w-1/2 border-2 rounded-md p-1"
+                            placeholder="b"> <span>cm</span>
+                        <input id="parallelogram_height" type="text " class="w-1/2 border-2 rounded-md p-1"
+                            placeholder="h"><span>cm</span>
+                    </div>
+                    <div>
+                        <p>Area(A)= <span id="parallelogram_area">0</span><span>cm<sup>2</sup> </span></p>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <button onclick="parallelogram()" class="btn bg-green-400 w-full">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- pentagon -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/pentagon.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">parallelogram</h2>
+                    <p>Area(A)=0.5 x p x b</p>
+                    <div class="flex gap-3">
+                        <input id="pentagon_base" type="text" class="w-1/2 border-2 rounded-md p-1"
+                            placeholder="p"> <span>cm</span>
+                        <input id="pentagon_height" type="text " class="w-1/2 border-2 rounded-md p-1"
+                            placeholder="b"><span>cm</span>
+                    </div>
+                    <div>
+                        <p>Area(A)= <span id="pentagon_area">0</span><span>cm<sup>2</sup> </span></p>
+                    </div>
+                    <div class="card-actions justify-end">
+                        <button onclick="pentagon()" class="btn bg-green-400 w-full">calculate</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
-
+    <script src="./pentagon.js"></script>
+    <script src="./parallelogram.js"></script>
     <script src="./geometry.js"></script>
 </body>
 
